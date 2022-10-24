@@ -169,7 +169,9 @@ main > .search-area {
 /* .search-keyword-area a:hover + hr{
     background: none;
 } */
-
+.search-keyword-area a:last-of-type {
+    margin-bottom: 15px;
+}
 .search-keyword-area a > i {
     border: 2px solid #ccc;
     width: 35px;
@@ -322,8 +324,8 @@ main > .search-area {
 /* js-style */
 
 .js-visiable {
-    /* display: block; */
     max-height: 100vh;
+    margin-top: 15px;
 }
 .js-blur {
     opacity: 0.8;

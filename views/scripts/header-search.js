@@ -1,5 +1,4 @@
 window.addEventListener("load", function(){
-    console.log("Hello World");
     let blurBox = document.querySelector(".blur-box");
     let searchForm = document.querySelector(".search-form");
     let searchKeywordArea = document.querySelector(".search-keyword-area");
@@ -52,7 +51,7 @@ window.addEventListener("load", function(){
         searchKeywordArea.classList.remove("js-visiable");
         blurBox.classList.remove("js-blur");
     }); 
-    let exampleData = ['라스베이거스', '서울', '동대문', '부산 해운대'];
+    let exampleData = ['라스베이거스', '서울', '동대문', '부산 해운대', '뚝섬유원지'];
     function createPopularKeyword() {
         popularKeywordList.innerHTML = "";
         for(let i = 0; i<exampleData.length; i++) {
