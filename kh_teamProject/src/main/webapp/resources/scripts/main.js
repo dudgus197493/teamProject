@@ -5,12 +5,6 @@ window.addEventListener("load", function(){
     let searchKeywordArea = document.querySelector(".search-keyword-area");
     let searchInput = searchForm.querySelector("#search-input");
     let popularKeywordList = searchForm.querySelector(".popular-keyword-list");
-
-    console.log(searchForm);
-    console.log(searchKeywordArea);
-    console.log(searchInput);
-    console.log(popularKeywordList);
-    
     popularKeywordList.addEventListener("mouseover", function(e) {
         let targetNode = e.target;
         // console.log(targetNode);

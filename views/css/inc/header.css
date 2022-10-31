@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 0; 
     padding: 0;
     box-sizing: border-box;
 }
@@ -8,17 +8,24 @@ a {
     text-decoration: none;
     color: black;
 }
+li {
+    list-style: none;
+}
 header, main, footer, div, span, article, a, form {
     /* border: 1px solid black; */
 }
-
+html{
+    height: 100%;
+}
 body {
-    width: 1200px;
-    height: auto;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /************************* header *************************/
 header {
+    /* padding: 15px 0px; */
+    width: 1200px;
     position: sticky;
     top: 0;
     display: flex;
@@ -27,6 +34,7 @@ header {
     background-color: white;
     z-index: 1000;
     border-bottom: 1px solid #ccc;
+    margin: 0 auto;
 }
 
 header > .left-column {
@@ -76,7 +84,8 @@ header > .right-column > .header-nav i {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-basis: 10%;
+    flex-basis: 25%;
+    width: 100px;
     border-radius: 20px;
     cursor: pointer;
     height: 70%;
@@ -270,7 +279,7 @@ label[for='header-menu-toggle'] {
     height: 100%;
     background-color: rgb(255, 255, 255);
     opacity: 0;
-    z-index: 500;
+    z-index: -1;
     pointer-events: none;
     transition: 0.2s;
 }

@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -5,49 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/inc/header.css">
-    <link rel="stylesheet" href="css/main-style.css">
-    <link rel="stylesheet" href="css/inc/footer.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="/resources/css/inc/header.css">
+    <link rel="stylesheet" href="/resources/css/main-style.css">
+    <link rel="stylesheet" href="/resources/css/inc/footer.css">
+    <link rel="stylesheet" href="/resources/css/swiper.min.css">
 
     <title>메인 페이지</title>
-    <script src="/views/scripts/swiper.min.js"></script>
+    <script src="/resources/scripts/swiper.min.js"></script>
     <script src="https://kit.fontawesome.com/3fe30a9b47.js" crossorigin="anonymous"></script>
-    <script src="/views/scripts/main-slide.js"></script>
-    <script src="/views/scripts/main.js"></script>
+    <script src="/resources/scripts/main-slide.js"></script>
+    <script src="/resources/scripts/main.js"></script>
 </head>
 <body>
-    <header>
-        <section class="left-column">
-            <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="" width="200px">
-            <!-- <span>Tripadvisor</span> -->
-        </section>
-        <section class="right-column">
-            <ul class="header-nav">
-                <li><a href="프로필페이지/리뷰"><i class="fa-solid fa-pen"></i>리뷰</a></li>
-                <li><a href="#"><i class="fa-solid fa-bell"></i>알림</a></li>
-            </ul>
-
-            <!-- 로그아웃 상태라면 -->
-            <a href="/views/member/login.html" class="header-login">로그인</a>
-            
-            <!-- 로그인 상태라면 -->
-            <!-- <div class="profile-img">
-                <label for="header-menu-toggle">
-                    <img src="/images/ben__song2.jpg" alt="프로필 이미지">
-                </label>
-                <input type="checkbox" id="header-menu-toggle">
-                <div class="top-down-menu">
-                    <ul>
-                        <li><a href="내정보 확인 이동">내 정보</a></li>
-                        <li><a href="프로필 페이지 이동">마이 프로필</a></li>
-                        <li><a href="로그아웃페이지 이동">로그아웃</a></li>
-                    </ul>
-                </div>
-            </div> -->
-        </section>
-    </header>
-
+    <!-- header:include -->
+	<jsp:include page="/WEB-INF/views/inc/header.jsp"></jsp:include>
     <main>
         <div class="search-area ">
             <form action="#" class="search-form">
@@ -85,13 +58,14 @@
                 
                 </div>
             </form>
+            
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="images/main-img1.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="images/main-img2.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="images/main-img3.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="images/main-img4.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="images/main-img1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/resources/images/main-img1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/resources/images/main-img2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/resources/images/main-img3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/resources/images/main-img4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/resources/images/main-img5.jpg" alt=""></div>
                 </div>
             </div>
 
@@ -119,7 +93,7 @@
                     <ul class="place-list">
                         <li class="place-item">
                             <a href="해당 장소에 대한 상세페이지(자바스크립트로 queryString 생성)">
-                                <img src="/images/ben__song1.jpg">
+                                <img src="/resources/images/ben__song1.jpg">
                                 <span class="place-title">최근에 본 장소1</span>
                                 <div class="grade">
                                     <span>평점</span>
@@ -129,7 +103,7 @@
                         </li>
                         <li class="place-item">
                             <a href="해당 장소에 대한 상세페이지(자바스크립트로 queryString 생성)">
-                                <img src="/images/ben__song1.jpg">
+                                <img src="/resources/images/ben__song1.jpg">
                                 <span class="place-title">최근에 본 장소2</span>
                                 <div class="grade">
                                     <span>평점</span>
@@ -139,7 +113,7 @@
                         </li>
                         <li class="place-item">
                             <a href="해당 장소에 대한 상세페이지(자바스크립트로 queryString 생성)">
-                                <img src="/images/ben__song1.jpg">
+                                <img src="/resources/images/ben__song1.jpg">
                                 <span class="place-title">최근에 본 장소3</span>
                                 <div class="grade">
                                     <span>평점</span>
@@ -149,7 +123,7 @@
                         </li>
                         <li class="place-item">
                             <a href="해당 장소에 대한 상세페이지(자바스크립트로 queryString 생성)">
-                                <img src="/images/ben__song1.jpg">
+                                <img src="/resources/images/ben__song1.jpg">
                                 <span class="place-title">최근에 본 장소4</span>
                                 <div class="grade">
                                     <span>평점</span>
@@ -159,7 +133,7 @@
                         </li>
                         <li class="place-item">
                             <a href="해당 장소에 대한 상세페이지(자바스크립트로 queryString 생성)">
-                                <img src="/images/ben__song1.jpg">
+                                <img src="/resources/images/ben__song1.jpg">
                                 <span class="place-title">최근에 본 장소5</span>
                                 <div class="grade">
                                     <span>평점</span>
@@ -169,7 +143,7 @@
                         </li>
                         <li class="place-item">
                             <a href="해당 장소에 대한 상세페이지(자바스크립트로 queryString 생성)">
-                                <img src="/images/ben__song2.jpg">
+                                <img src="/resources/images/ben__song2.jpg">
                                 <span class="place-title">최근에 본 장소6</span>
                                 <div class="grade">
                                     <span>평점</span>
@@ -179,7 +153,7 @@
                         </li>
                         <li class="place-item">
                             <a href="해당 장소에 대한 상세페이지(자바스크립트로 queryString 생성)">
-                                <img src="/images/ben__song3.jpg">
+                                <img src="/resources/images/ben__song3.jpg">
                                 <span class="place-title">최근에 본 장소7</span>
                                 <div class="grade">
                                     <span>평점</span>
@@ -189,7 +163,7 @@
                         </li>
                         <li class="place-item">
                             <a href="해당 장소에 대한 상세페이지(자바스크립트로 queryString 생성)">
-                                <img src="/images/ben__song4.jpg">
+                                <img src="/resources/images/ben__song4.jpg">
                                 <span class="place-title">최근에 본 장소8</span>
                                 <div class="grade">
                                     <span>평점</span>
@@ -199,7 +173,7 @@
                         </li>
                         <li class="place-item">
                             <a href="해당 장소에 대한 상세페이지(자바스크립트로 queryString 생성)">
-                                <img src="/images/ben__song4.jpg">
+                                <img src="/resources/images/ben__song4.jpg">
                                 <span class="place-title">최근에 본 장소9</span>
                                 <div class="grade">
                                     <span>평점</span>
@@ -209,7 +183,7 @@
                         </li>
                         <li class="place-item">
                             <a href="해당 장소에 대한 상세페이지(자바스크립트로 queryString 생성)">
-                                <img src="/images/ben__song4.jpg">
+                                <img src="/resources/images/ben__song4.jpg">
                                 <span class="place-title">최근에 본 장소10</span>
                                 <div class="grade">
                                     <span>평점</span>
@@ -230,7 +204,7 @@
                     <ul class="place-list">
                         <li class="place-item">
                             <a href="해당 장소에 대한 상세페이지(자바스크립트로 queryString 생성)">
-                                <img src="/images/ben__song1.jpg">
+                                <img src="/resources/images/ben__song1.jpg">
                                 <span class="place-title">주변 장소1</span>
                                 <div class="grade">
                                     <span>평점</span>
@@ -240,7 +214,7 @@
                         </li>
                         <li class="place-item">
                             <a href="해당 장소에 대한 상세페이지(자바스크립트로 queryString 생성)">
-                                <img src="/images/ben__song1.jpg">
+                                <img src="/resources/images/ben__song1.jpg">
                                 <span class="place-title">주변 장소2</span>
                                 <div class="grade">
                                     <span>평점</span>
@@ -250,7 +224,7 @@
                         </li>
                         <li class="place-item">
                             <a href="해당 장소에 대한 상세페이지(자바스크립트로 queryString 생성)">
-                                <img src="/images/ben__song1.jpg">
+                                <img src="/resources/images/ben__song1.jpg">
                                 <span class="place-title">주변 장소3</span>
                                 <div class="grade">
                                     <span>평점</span>
@@ -260,7 +234,7 @@
                         </li>
                         <li class="place-item">
                             <a href="해당 장소에 대한 상세페이지(자바스크립트로 queryString 생성)">
-                                <img src="/images/ben__song1.jpg">
+                                <img src="/resources/images/ben__song1.jpg">
                                 <span class="place-title">주변 장소4</span>
                                 <div class="grade">
                                     <span>평점</span>
@@ -270,7 +244,7 @@
                         </li>
                         <li class="place-item">
                             <a href="해당 장소에 대한 상세페이지(자바스크립트로 queryString 생성)">
-                                <img src="/images/ben__song1.jpg">
+                                <img src="/resources/images/ben__song1.jpg">
                                 <span class="place-title">주변 장소5</span>
                                 <div class="grade">
                                     <span>평점</span>
@@ -280,7 +254,7 @@
                         </li>
                         <li class="place-item">
                             <a href="해당 장소에 대한 상세페이지(자바스크립트로 queryString 생성)">
-                                <img src="/images/ben__song2.jpg">
+                                <img src="/resources/images/ben__song2.jpg">
                                 <span class="place-title">주변 장소6</span>
                                 <div class="grade">
                                     <span>평점</span>
@@ -290,7 +264,7 @@
                         </li>
                         <li class="place-item">
                             <a href="해당 장소에 대한 상세페이지(자바스크립트로 queryString 생성)">
-                                <img src="/images/ben__song3.jpg">
+                                <img src="/resources/images/ben__song3.jpg">
                                 <span class="place-title">주변 장소7</span>
                                 <div class="grade">
                                     <span>평점</span>
@@ -300,7 +274,7 @@
                         </li>
                         <li class="place-item">
                             <a href="해당 장소에 대한 상세페이지(자바스크립트로 queryString 생성)">
-                                <img src="/images/ben__song4.jpg">
+                                <img src="/resources/images/ben__song4.jpg">
                                 <span class="place-title">주변 장소8</span>
                                 <div class="grade">
                                     <span>평점</span>
@@ -310,7 +284,7 @@
                         </li>
                         <li class="place-item">
                             <a href="해당 장소에 대한 상세페이지(자바스크립트로 queryString 생성)">
-                                <img src="/images/ben__song4.jpg">
+                                <img src="/resources/images/ben__song4.jpg">
                                 <span class="place-title">주변 장소9</span>
                                 <div class="grade">
                                     <span>평점</span>
@@ -320,7 +294,7 @@
                         </li>
                         <li class="place-item">
                             <a href="해당 장소에 대한 상세페이지(자바스크립트로 queryString 생성)">
-                                <img src="/images/ben__song4.jpg">
+                                <img src="/resources/images/ben__song4.jpg">
                                 <span class="place-title">주변 장소10</span>
                                 <div class="grade">
                                     <span>평점</span>
@@ -334,24 +308,9 @@
             </div>
         </section>
     </main>
-    <footer>
-        <section>
-            <div class="footer-logo">
-                <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg" alt="">
-            </div>
-            <div class="footer-content">
-                <span>© 2022 Tripadvisor LLC All rights reserved.</span>
-                <ul class="footer-nav">
-                    <li><a href="이용 약관">이용 약관</a></li>
-                    <li><a href="개인정보 수집 및 이용약관">개인정보 수집 및 이용 약관</a></li>
-                    <li><a href="문의하기">문의하기</a></li>
-                </ul>
-            </div>
-        </section>
-        <section class="footer-explanation">
-            <p>KH 정보교육원 교육과정 중 중간프로젝트 트립어드바이저 클론버전 입니다. </p>
-        </section>
-    </footer>
+    <!-- footer:include -->
+    <jsp:include page="/WEB-INF/views/inc/footer.jsp"></jsp:include>
+    
 
     <div class="blur-box"></div>
 </body>
